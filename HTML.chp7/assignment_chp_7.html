@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment chp7</title>
+</head>
+<body>
+<h1>Chapter # 7 - Forms</h1>
+<form action="http://www.example.com/login.php" method="POST">
+<fieldset>
+    <legend>Your Details:</legend>
+    <label for="fname">Name:</label>
+    <input type="text" name="name" id="fname" required>
+    <br> <br>
+    <label for="email_id">Email:</label>
+    <input type="text" name="email" id="email_id" required>
+</fieldset>
+
+<fieldset>
+    <legend>Your Review:</legend>
+    <p>
+        How did you hear about us?
+    <select name="reference" id="reference">
+        <option value="google">Google</option>
+        <option value="yahoo">Yahoo</option>
+        <option value="linkedin">Linkedin</option>
+        <option value="twitter">Twitter</option>
+    </select>
+    </p>
+    <p>
+        Would you visit again? <br>
+        <input type="radio" name="visit" id="yes" value="y">
+        <label for="yes">Yes</label>
+        <input type="radio" name="visit" id="no" value="n">
+        <label for="no">No</label>
+        <input type="radio" name="visit" id="maybe" value="mb">
+        <label for="maybe">Maybe</label>
+    </p>
+    <label for="comnt">Comments:</label> <br>
+    <textarea name="comments" id="cpmnt" cols="30" rows="5"></textarea> <br>
+    <input type="checkbox" name="updates" checked>Sign me up for updates <br>
+    <input type="submit" value="Submit Review">
+</fieldset>
+</form>
+</body>
+</html>
